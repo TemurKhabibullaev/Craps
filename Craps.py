@@ -4,6 +4,8 @@ import random
 import time
 
 # Balance
+
+## According to the instructions, this should be a function definition to get the initial bankroll.
 print('''
 Welcome to Craps Game!
 You will be asked the full amount of money from your bankroll.
@@ -20,7 +22,7 @@ bet = int(input('> '))
 def finish():
     print('Good Job! Game is finished. Here is your balance:\n> ', total_amount)
 
-
+## SHould not define a function inside a loop.  You can call the function in the loop if needed.
 while bet <= balance:
     def rollDice():
         total_amount = balance - bet
